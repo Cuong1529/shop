@@ -29,3 +29,31 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* CSS Modal overlay */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.modal___body {
+    width: 300px;
+    height: 300px;
+    background-color: var(--white-color);
+    margin: auto;
+    z-index: 2;
+    border-radius: 5px;
+}
