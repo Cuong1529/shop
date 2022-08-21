@@ -2,6 +2,11 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: #fe5430;
+
+    --header-height: 120px;
+    --navbar-height: 48px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height))
 }
 
 * {
@@ -54,4 +59,111 @@ html {
     margin: auto;
     z-index: 2;
     border-radius: 5px;
+    overflow: hidden;
+}
+
+/* authentication form register */
+.auth__form {
+    width: 500px;
+}
+.auth__form-container {
+    padding: 0 30px;
+}
+.auth__form-header {
+    display: flex;
+    justify-content: space-between;
+}
+.auth__form-heading,
+.auth__form-switch-btn {
+    margin-top: 12px;
+    font-size: 1.6rem;
+}
+
+.auth__form-switch-btn {
+    display: block;
+    color: var(--primary-color);
+}
+
+.auth__form-form {
+    margin-top: 15px;
+}
+
+.auth__form-input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.auth__form-input:focus {
+    outline: none;
+}
+
+.auth__form-aside {
+    margin-top: 20px;
+}
+
+.auth__form-policy-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.policy {
+    color: var(--primary-color);
+}
+.auth__controls {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    margin-right: 0px;
+    justify-content: flex-end;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    font-weight: 500;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.auth__socials {
+    display: flex;
+    height: 40px;
+    background-color: #a09999;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.btn-with-icon {
+    color: var(--white-color);
+    font-size: 1.3rem;
+    height: 30px;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+}
+.btn-facebook {
+    margin-left: 30px;
+    background-color: rgb(6, 16, 160);
+    flex-basis: 50%;
+}
+
+.btn-google {
+    margin-right: 30px;
+    background-color: #ce6c6c;
+    margin-left: 10px;
+    flex-basis: 50%;
 }
